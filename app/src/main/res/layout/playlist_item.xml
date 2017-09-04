@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <ImageView
+        android:id="@+id/imagev_playlist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:background="@color/Transparentcolor"
+        android:contentDescription="@string/imagebutton"
+        android:src="@mipmap/imagenoplay" />
+
+    <TextView
+        android:id="@+id/tv_palylist_song"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:lines="1"
+        android:maxEms="15"
+        android:layout_toRightOf="@+id/imagev_playlist"
+        android:text="TextView"
+        android:textColor="@color/textcolors"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tv_playlist_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="5dp"
+        android:text="TextView"
+        android:textColor="@color/textcolors" />
+
+</RelativeLayout>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <LinearLayout
+        android:id="@+id/frag_search_linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <EditText
+        android:id="@+id/et_sousuo"
+        android:layout_width="275dp"
+        android:hint="@string/input_keyword"
+        android:layout_below="@+id/frag_search_linear"
+        android:layout_height="wrap_content"
+        android:ems="10" >
+    </EditText>
+
+   <ListView
+        android:id="@+id/listview_search"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/et_sousuo"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="80dp"
+        android:divider="@android:color/transparent"
+        android:focusableInTouchMode="true"
+        android:dividerHeight="10dp" >
+    </ListView>
+
+    <ImageButton
+        android:id="@+id/imagefragment_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/listview_search"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/et_sousuo"
+        android:background="@color/Transparentcolor"
+        android:contentDescription="@string/imagebutton"
+        android:src="@mipmap/sousuoimage" />
+
+    <TextView
+        android:id="@+id/tv_shownodata"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="@string/shownoin"
+        android:visibility="invisible"
+        android:textSize="20sp"
+        android:textColor="@color/textcolors" />
+
+    <ImageView
+        android:id="@+id/zhendonghua"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="invisible"
+        android:background="@color/Transparentcolor"
+        android:contentDescription="@string/imagebutton"
+        android:src="@drawable/frameofanimation" />
+
+</RelativeLayout>

@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/contentfragment"
+    android:orientation="vertical" >
+    <TextView
+        android:layout_width="match_parent"
+        android:id="@+id/home_text_view"
+        android:layout_height="1dp"
+        android:visibility="gone"/>
+    <RelativeLayout
+        android:id="@+id/main_linlayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" >
+
+        <TextView
+            android:id="@+id/tv_showsong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+            android:lines="1"
+       	 	android:maxEms="10"
+            android:text="@string/show_name"
+            android:textColor="@color/textcolors"
+            android:textSize="20sp"
+            tools:ignore="RelativeOverlap" />
+
+        <ImageButton
+            android:id="@+id/imagebtn_sliding"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="14dp"
+            android:onClick="onClick"
+            android:background="@color/Transparentcolor"
+            android:contentDescription="@string/imagebutton"
+            android:src="@mipmap/show_left_menu"
+            tools:ignore="RtlHardcoded" />
+
+        <ImageButton
+            android:id="@+id/imagebtn_love"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imagebtn_sliding"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="18dp"
+            android:onClick="onClick"
+            android:background="@color/Transparentcolor"
+            android:contentDescription="@string/imagebutton"
+            android:src="@mipmap/baixin"
+            tools:ignore="RtlHardcoded" />
+
+        <TextView
+            android:id="@+id/tv_showname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_showsong"
+            android:layout_centerHorizontal="true"
+            android:text="@string/show_name"
+            android:textColor="@color/textcolors"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/titleLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal|center_vertical|center"
+            android:text="@string/play"
+            android:textColor="@color/label"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal|center_vertical|center"
+            android:text="@string/list"
+            android:textColor="@color/label"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/text3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal|center_vertical|center"
+            android:text="@string/sousuo"
+            android:textColor="@color/label"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutbar"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/text6"
+            android:layout_width="20dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/title" />
+
+        <TextView
+            android:id="@+id/text7"
+            android:layout_width="20dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/title" />
+
+        <TextView
+            android:id="@+id/text8"
+            android:layout_width="20dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/title" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></android.support.v4.view.ViewPager>
+
+        <RelativeLayout
+            android:id="@+id/main_layout"
+            android:layout_width="match_parent"
+            android:layout_height="85dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            tools:ignore="RtlHardcoded">
+
+            <ImageButton
+                android:id="@+id/imagebtn_model"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/tv_time"
+                android:layout_marginLeft="15dp"
+                android:background="@color/Transparentcolor"
+                android:contentDescription="@string/imagebutton"
+                android:onClick="onClick"
+                android:src="@mipmap/shunxu" />
+
+            <SeekBar
+                android:id="@+id/seekBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginBottom="65dp"
+                android:max="100"
+                android:progress="0"
+                android:thumb="@mipmap/dki"
+                android:thumbOffset="0dp" />
+
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignTop="@+id/seekBar"
+                android:layout_marginLeft="14dp"
+                android:layout_marginTop="17dp"
+                android:text="@string/start_time"
+                android:textColor="@color/textcolors"
+                tools:ignore="RelativeOverlap" />
+
+            <ImageButton
+                android:id="@+id/imagebtn_more"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/tv_time"
+                android:layout_marginRight="15dp"
+                android:background="@color/Transparentcolor"
+                android:contentDescription="@string/imagebutton"
+                android:onClick="onClick"
+                android:src="@mipmap/gengduo"
+                tools:ignore="RtlHardcoded" />
+
+            <TextView
+                android:id="@+id/tv_totaltime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/tv_time"
+                android:layout_alignBottom="@+id/tv_time"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="14dp"
+                android:text="@string/stop_time"
+                android:textColor="@color/textcolors"
+                tools:ignore="RelativeOverlap,RtlHardcoded" />
+
+            <ImageButton
+                android:id="@+id/imagebtn_play"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignBottom="@+id/imagebtn_next"
+                android:layout_centerHorizontal="true"
+                android:background="@color/Transparentcolor"
+                android:contentDescription="@string/imagebutton"
+                android:onClick="onClick"
+                android:src="@mipmap/play" />
+
+            <ImageButton
+                android:id="@+id/imagebtn_next"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@+id/imagebtn_play"
+                android:background="@color/Transparentcolor"
+                android:contentDescription="@string/imagebutton"
+                android:onClick="onClick"
+                android:src="@mipmap/next" />
+
+            <ImageButton
+                android:id="@+id/imagebtn_ona"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/imagebtn_play"
+                android:layout_marginRight="15dp"
+                android:layout_toLeftOf="@+id/imagebtn_play"
+                android:background="@color/Transparentcolor"
+                android:contentDescription="@string/imagebutton"
+                android:onClick="onClick"
+                android:src="@mipmap/on_a" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_timetiao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/main_layout"
+            android:layout_centerHorizontal="true"
+            android:background="@mipmap/login_input_w"
+            android:maxLines="1"
+            android:padding="15dp"
+            android:text="0:00"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:visibility="invisible"
+            tools:ignore="HardcodedText" />
+
+    </RelativeLayout>
+
+</LinearLayout>

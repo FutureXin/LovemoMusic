@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:drawable="@mipmap/dha"
+        android:duration="100">
+    </item>
+    <item
+        android:drawable="@mipmap/dhb"
+        android:duration="100">
+    </item>
+    <item
+        android:drawable="@mipmap/dhc"
+        android:duration="100">
+    </item>
+    <item
+        android:drawable="@mipmap/dhd"
+        android:duration="100">
+    </item>
+    <item
+        android:drawable="@mipmap/dhe"
+        android:duration="100">
+    </item>
+    <item
+        android:drawable="@mipmap/dhf"
+        android:duration="100">
+    </item>
+    <item
+        android:drawable="@mipmap/dhg"
+        android:duration="100">
+    </item>
+    <item
+        android:drawable="@mipmap/dhh"
+        android:duration="100">
+    </item>
+
+</animation-list>

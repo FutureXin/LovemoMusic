@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:id="@+id/registeredlayout">
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:text="@string/zhuce"
+        android:textColor="@color/textcolors"
+        android:textSize="25sp" />
+
+    <EditText
+        android:id="@+id/et_rename"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tv_showusername"
+        android:layout_alignBottom="@+id/tv_showusername"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/tv_showusername"
+        android:ems="10"
+        android:hint="@string/inputusername" >
+    </EditText>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/et_rename"
+        android:layout_marginTop="16dp"
+        android:background="@mipmap/ci9"
+        android:gravity="center"
+        android:paddingLeft="1dp"
+        android:paddingRight="1dp"
+        android:text="@string/userpsw"
+        android:textColor="@color/textcolors"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/et_repsw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView2"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_alignLeft="@+id/et_rename"
+        android:layout_alignParentRight="true"
+        android:ems="10"
+        android:hint="@string/inputuserpsw"
+        android:inputType="textPassword" />
+
+    <TextView
+        android:id="@+id/tv_showproblem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/et_repsw"
+        android:layout_marginTop="16dp"
+        android:background="@mipmap/ci9"
+        android:gravity="center"
+        android:paddingLeft="1dp"
+        android:paddingRight="1dp"
+        android:text="@string/userpsw"
+        android:textColor="@color/textcolors"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/et_repswtow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tv_showproblem"
+        android:layout_alignBottom="@+id/tv_showproblem"
+        android:layout_alignLeft="@+id/et_repsw"
+        android:layout_alignParentRight="true"
+        android:ems="10"
+        android:hint="@string/querenmima"
+        android:inputType="textPassword" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_repswtow"
+        android:layout_marginTop="16dp"
+        android:layout_toLeftOf="@+id/et_repswtow"
+        android:background="@mipmap/ci9"
+        android:gravity="center"
+        android:paddingLeft="1dp"
+        android:paddingRight="1dp"
+        android:text="@string/encrypted"
+        android:textColor="@color/textcolors"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/et_reencrypted"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView4"
+        android:layout_alignBottom="@+id/textView4"
+        android:layout_alignLeft="@+id/et_repswtow"
+        android:layout_alignParentRight="true"
+        android:ems="10"
+        android:hint="@string/inputmibao" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/et_answer"
+        android:layout_alignBottom="@+id/et_answer"
+        android:layout_toLeftOf="@+id/et_answer"
+        android:background="@mipmap/ci9"
+        android:gravity="center"
+        android:paddingLeft="1dp"
+        android:paddingRight="1dp"
+        android:text="@string/answer"
+        android:textColor="@color/textcolors"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/et_answer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/et_reencrypted"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/et_reencrypted"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="@string/inputanswer" />
+
+    <Button
+        android:id="@+id/btn_rereg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/et_answer"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/btn_login_selector"
+        android:textSize="22sp"
+        android:text="@string/zhuce" />
+
+    <TextView
+        android:id="@+id/tv_showusername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView5"
+        android:layout_marginTop="18dp"
+        android:background="@mipmap/ci9"
+        android:gravity="center"
+        android:paddingLeft="1dp"
+        android:paddingRight="1dp"
+        android:text="@string/username"
+        android:textColor="@color/textcolors"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/btn_reempty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btn_rereg"
+        android:layout_below="@+id/btn_rereg"
+        android:gravity="center"
+        android:paddingLeft="1dp"
+        android:paddingRight="1dp"
+        android:text="@string/empty" />
+
+</RelativeLayout>

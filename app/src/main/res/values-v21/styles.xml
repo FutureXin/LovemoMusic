@@ -1,0 +1,35 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <!--<style name="AppTheme" parent="AppTheme.Base"></style>-->
+
+    <style name="AppTheme.Base" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:screenOrientation">portrait</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:fitsSystemWindows">true</item>
+        <item name="android:clipToPadding">true</item>
+        <!--Android 5.x开始需要把颜色设置透明，否则导航栏会呈现系统默认的浅灰色-->
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <!--<item name="android:clipToPadding">true</item>-->
+        <!--将ActionBar隐藏-->
+        <item name="windowActionBar">false</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="NotificationContent">
+        <item name="android:textColor">?android:attr/textColorPrimary</item>
+    </style>
+    <style name="btn_custom_style">
+        <item name="android:layout_width">24dip</item>
+        <item name="android:layout_height">28dip</item>
+        <item name="android:layout_gravity">center|right</item>
+        <item name="android:background">?android:listChoiceBackgroundIndicator</item>
+    </style>
+    <style name="NotificationTitle">
+        <item name="android:textColor">?android:attr/textColorPrimary</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+</resources>

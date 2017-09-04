@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@mipmap/xingshou1"
+    android:id="@+id/search_relative"
+    android:clickable="true"
+    android:layout_height="match_parent" >
+    <LinearLayout
+        android:id="@+id/search_linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <ListView
+        android:id="@+id/listview_search"
+        android:layout_width="match_parent"
+        android:layout_marginTop="50dp"
+        android:layout_height="match_parent"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="10dp" >
+
+    </ListView>
+    
+    <TextView
+        android:id="@+id/tv_shownodata"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="@string/shownoin"
+        android:visibility="invisible"
+        android:textSize="20sp"
+        android:textColor="@color/textcolors" />
+
+    <ImageView
+        android:id="@+id/loding"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="invisible"
+        android:background="@color/Transparentcolor"
+        android:contentDescription="@string/imagebutton"
+        />
+
+    <EditText
+        android:id="@+id/et_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/imagebtnsearch"
+        android:ems="10" >
+
+     <!-- <requestFocus /> -->   
+    </EditText>
+
+    <ImageButton
+        android:id="@+id/imagebtnsearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/Transparentcolor"
+        android:src="@mipmap/leftmenu1" />
+
+</RelativeLayout>

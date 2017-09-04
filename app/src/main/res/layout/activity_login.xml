@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/loginlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <Button
+        android:id="@+id/btn_forgotpsw"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/et_userpsw"
+        android:layout_marginTop="18dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/btn_forgotpassword_selector"
+        android:text="@string/wangjimima"
+        tools:ignore="RtlHardcoded" />
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/btn_forgotpsw"
+        android:layout_margin="5dp"
+        android:background="@drawable/copybtn_login_selector"
+        android:text="@string/denglu"
+        tools:ignore="RtlHardcoded" />
+
+    <Button
+        android:id="@+id/btn_reg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/btn_login"
+        android:layout_margin="5dp"
+        android:background="@drawable/btn_reg_selector"
+        android:text="@string/zhuce"
+        tools:ignore="RtlHardcoded" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:text="@string/login"
+        android:textColor="@color/textcolors"
+        android:textSize="25sp"
+        tools:ignore="RtlHardcoded" />
+
+    <EditText
+        android:id="@+id/et_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tv_showusername"
+        android:layout_alignBottom="@+id/tv_showusername"
+        android:layout_alignLeft="@+id/et_userpsw"
+        android:layout_alignRight="@+id/et_userpsw"
+        android:ems="10"
+        android:hint="@string/inputusername"
+        tools:ignore="RtlHardcoded" />
+		<requestFocus />
+    <EditText
+        android:id="@+id/et_userpsw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/btn_login"
+        android:layout_below="@+id/et_username"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@+id/textView2"
+        android:ems="10"
+        android:hint="@string/inputuserpsw"
+        android:inputType="textPassword"
+        tools:ignore="RtlHardcoded">
+
+        
+    </EditText>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/et_userpsw"
+        android:layout_alignBottom="@+id/et_userpsw"
+        android:layout_alignParentLeft="true"
+        android:background="@mipmap/ci9"
+        android:gravity="center"
+        android:paddingLeft="1dp"
+        android:paddingRight="1dp"
+        android:text="@string/userpsw"
+        android:textColor="@color/textcolors"
+        android:textSize="18sp"
+        tools:ignore="RtlHardcoded" />
+
+    <TextView
+        android:id="@+id/tv_showusername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView5"
+        android:background="@mipmap/ci9"
+        android:layout_marginTop="18dp"
+        android:gravity="center"
+        android:paddingLeft="1dp"
+        android:paddingRight="1dp"
+        android:text="@string/username"
+        android:textColor="@color/textcolors"
+        android:textSize="18sp"
+        tools:ignore="RtlHardcoded" />
+
+</RelativeLayout>

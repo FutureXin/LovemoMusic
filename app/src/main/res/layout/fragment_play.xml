@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <RelativeLayout
+            android:id="@+id/player_relativelayout_box"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+             android:layout_marginBottom="80dp" >
+
+            <RelativeLayout
+                android:id="@+id/player_relativelayout_change_2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="invisible" >
+
+                <RelativeLayout
+                    android:id="@+id/player_linearlayout_temp2"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@drawable/player_jianbian_kugou_w"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:id="@+id/player_imageview_change_2"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/main_colorchange_l"
+                        android:clickable="true"
+                        android:src="@mipmap/player_lyric_expand_w" />
+                </RelativeLayout>
+
+                <club.lovemo.view.LyricView
+                    android:id="@+id/lyricview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_above="@id/player_linearlayout_temp2"
+                    android:clickable="true"
+                    android:focusable="true" >
+                </club.lovemo.view.LyricView>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/player_relativelayout_change_1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="visible" >
+
+                <RelativeLayout
+                    android:id="@+id/player_linearlayout_temp"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@drawable/player_jianbian_kugou_w"
+                    android:orientation="horizontal" >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="50dp" >
+
+                        <TextView
+                            android:id="@+id/player_textview_default"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:text="@string/player_lyric"
+                            android:textColor="@color/white"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:id="@+id/player_textview_above"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginRight="50dp"
+                            android:singleLine="true"
+                            android:textColor="@color/white"
+                            android:textSize="20sp"
+                            android:visibility="visible" />
+
+                        <TextView
+                            android:id="@+id/player_textview_below"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginLeft="50dp"
+                            android:singleLine="true"
+                            android:textColor="@color/white"
+                            android:textSize="20sp"
+                            android:visibility="visible" />
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:id="@+id/player_imageview_change_1"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/main_colorchange_l"
+                        android:clickable="true"
+                        android:src="@mipmap/player_lyric_collapse_w" />
+                </RelativeLayout>
+
+                
+
+                <club.lovemo.view.VisualizerView
+                    android:id="@+id/visualizerview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_above="@id/player_linearlayout_temp"
+                    android:clickable="true"
+                    android:focusable="true" >
+                    </club.lovemo.view.VisualizerView>
+            </RelativeLayout>
+        </RelativeLayout>
+</LinearLayout>

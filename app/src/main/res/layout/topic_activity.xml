@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/btn_topic1"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:textColor="@color/textcolors"
+        android:background="@mipmap/meilizi"
+        android:text="@string/topic1" />
+
+    <Button
+        android:id="@+id/btn_topic2"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/textcolors"
+        android:background="@mipmap/fuguzong"
+        android:text="@string/topic_zongse" />
+
+    <Button
+        android:id="@+id/btn_topic3"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/textcolors"
+        android:background="@mipmap/kuxuanlan"
+        android:text="@string/topic_3" />
+
+</LinearLayout>

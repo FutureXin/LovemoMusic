@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/leftfragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <TextView
+        android:layout_width="match_parent"
+        android:id="@+id/left_text_view"
+        android:layout_height="1dp"
+        android:visibility="gone"/>
+    <ListView
+        android:id="@+id/left_menu_listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/left_menulistview_relative"
+        android:layout_marginTop="25dp"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="18dp"
+         >
+
+    </ListView>
+    <RelativeLayout
+        android:id="@+id/left_menulistview_relative"
+        android:layout_below="@+id/left_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageButton
+            android:id="@+id/left_menulistview_image"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="#00000000"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="18dp"
+            android:contentDescription="@string/imagebutton"
+            android:src="@mipmap/dmc"
+            tools:ignore="RtlHardcoded" />
+
+        <Button
+            android:id="@+id/left_menulistview_tvname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/left_menulistview_image"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="7dp"
+            android:layout_toRightOf="@+id/left_menulistview_image"
+            android:background="#00000000"
+            android:text="@string/loginandreg"
+            android:textColor="@color/textcolors"
+            android:textSize="17sp"
+            tools:ignore="RtlHardcoded" />
+    </RelativeLayout>
+
+    
+</RelativeLayout>
